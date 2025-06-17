@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zum Goldenen Hirsch - Reservierung</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -22,11 +23,11 @@
   </header>
 
   <main>
-    <h2>Tischreservierung</h2>
+    <h2>Tischreservierungsanfrage</h2>
     <form action="#" method="post">
 
       <fieldset>
-        <legend>Ihre Kontaktdaten</legend>
+        <legend>Ihre Kontaktdaten:</legend>
         <label for="vorname">Vorname*</label><br>
         <input type="text" id="vorname" name="vorname" required><br>
 
@@ -41,7 +42,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Reservierungsdetails</legend>
+        <legend>Reservierungsdetails:</legend>
 
         <label for="datum">Datum*</label><br>
         <input type="date" id="datum" name="datum" min="2025-06-16" required><br>
@@ -58,7 +59,7 @@
         <label for="personen">Personenzahl*</label><br>
         <input type="number" id="personen" name="personen" min="1" max="12" required><br>
 
-        <p>Anlass*</p>
+        <p>Anlass:*</p>
         <input type="radio" id="gemuetlich" name="occasion" value="Gemuetlich" required>
         <label for="gemuetlich">Gemütlich</label><br>
         <input type="radio" id="business" name="occasion" value="Business">
@@ -70,7 +71,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Besondere Wünsche</legend>
+        <legend>Besondere Wünsche:</legend>
 
         <input type="checkbox" id="fensterplatz" name="preferences[]" value="Fensterplatz">
         <label for="fensterplatz">Fensterplatz</label><br>
@@ -86,7 +87,7 @@
       </fieldset>
 
       <fieldset>
-        <legend>Weitere Angaben</legend>
+        <legend>Weitere Angaben:</legend>
         <label for="allergien">Allergien oder Unverträglichkeiten</label><br>
         <textarea id="allergien" name="allergien" placeholder="z.B. Gluten, Laktose"></textarea><br>
 
